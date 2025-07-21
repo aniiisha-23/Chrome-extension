@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tab Title Viewer</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      min-width: 280px;
+      padding: 20px;
+      background: linear-gradient(135deg, #e6f0ff, #d0e7ff); /* Light, professional blue */
+      color: #333;
+      text-align: center;
+      border-radius: 12px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+    }
+
+    h2 {
+      margin: 10px 0;
+      color: #005a9e;
+      font-size: 20px;
+    }
+
+    #getTitleBtn {
+      background-color: #0078d4;
+      border: none;
+      color: white;
+      padding: 10px 18px;
+      font-size: 15px;
+      cursor: pointer;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+    }
+
+    #getTitleBtn:hover {
+      background-color: #005a9e;
+    }
+
+    #title {
+      margin-top: 20px;
+      font-weight: 500;
+      font-size: 15px;
+      color: #1a1a1a;
+      word-wrap: break-word;
+    }
+
+    .emoji {
+      font-size: 28px;
+      margin-bottom: 8px;
+      color: #0078d4;
+    }
+  </style>
+</head>
+<body>
+  <div class="emoji">🗂️</div>
+  <h2>Find Your Tab Title</h2>
+  <button id="getTitleBtn">Get Title</button>
+  <div id="title">📄 Title will appear here</div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
